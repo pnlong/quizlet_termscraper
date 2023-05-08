@@ -3,7 +3,7 @@
 # May 26, 2021
 # Phillip Long
 
-# cat terms | awk '{$1=$1};1' | python quizlet_termscraper_webdriver.py chrome_driver_path course_name prioritize_definitions_method maximum_number_of_definitions > terms.md
+# cat terms | awk '{$1=$1};1' | python quizlet_termscraper_webdriver.py chrome_driver_path course_name prioritize_definitions_method maximum_number_of_definitions > terms_definitions.md
 
 
 # sys.argv[1] = path to chrome web driver, download at:
@@ -47,6 +47,8 @@ except:
     quit()
 
 course_name = str(sys.argv[2])
+if course_name.replace(" ", "") == "": # if course_name argument is empty
+    course_name = "" # set course_name to empty
 
 prioritize_definitions_method = str(sys.argv[3]).strip().lower()
 if prioritize_definitions_method not in ("long", "short"):
