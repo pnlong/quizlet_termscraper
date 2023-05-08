@@ -6,8 +6,8 @@
 # August 4, 2021
 # Phillip Long
 
-# cat quizlet_termscraper_output | python change_maximum_number_of_definitions.py maximum_number_of_definitions > terms_subset.md
-# cat quizlet_termscraper_output | python ~/Desktop/Coding/quizlet_termscraper/change_maximum_number_of_definitions.py 1 > terms_subset.md
+# cat quizlet_termscraper_output | python ~/quizlet_termscraper/change_maximum_number_of_definitions.py maximum_number_of_definitions > terms_definitions_filtered.md
+# Ex. : cat quizlet_termscraper_output | python ~/quizlet_termscraper/change_maximum_number_of_definitions.py 3 > terms_definitions_filtered.md
 
 
 # sys.argv[1] = maximum number of definitions to output per term (-1 to output all definitions found) [REQUIRED]
