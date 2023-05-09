@@ -3,7 +3,7 @@
 # May 26, 2021
 # Phillip Long
 
-# cat terms | awk '{$1=$1};1' | python quizlet_termscraper_webdriver.py chrome_driver_path course_name prioritize_definitions_method maximum_number_of_definitions > terms_definitions.md
+# cat terms | awk '{$1=$1};1' | python quizlet_termscraper_webdriver.py driver_address course_name prioritize_definitions_method maximum_number_of_definitions > terms_definitions.md
 
 
 # sys.argv[1] = path to chrome web driver, download at:
