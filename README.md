@@ -12,7 +12,7 @@ cat terms | awk '{$1=$1};1' | python quizlet_termscraper_webdriver.py driver_add
 ```
 where:
 - `terms` is a list of terms. See [samples/terms.txt](https://github.com/pnlong/quizlet_termscraper/blob/main/samples/terms.txt) for reference.
-- `driver_address` is the filepath to Selenium Chrome Web Driver. The Chrome Web Driver can be downloaded at [https://chromedriver.chromium.org/downloads]. **Note that Chrome Driver version must match the version of Chrome installed on the computer**. This argument is necessary.
+- `driver_address` is the filepath to Selenium Chrome Web Driver. The Chrome Web Driver can be downloaded at (https://chromedriver.chromium.org/downloads). **Note that Chrome Driver version must match the version of Chrome installed on the computer**. This argument is necessary.
 - `course_name` is the name of the course for which `terms` relates to (in my case, A.P. United States History). Preferably, this argument is provided as the most commonly-used name for the course (APUSH). This argument is necessary (though you could provide it as ` `).
 - `prioritize_definitions_method` is the method for prioritizing definitions found on various quizlet sites for a term; either `long` (to sort *longer* definitions first) or `short` (to sort *shorter* definitions first). This argument is necessary.
 - `maximum_number_of_definitions` is the maximum number of definitions to output per term (`-1` to output all definitions found). Defaults to `-1`. This argument is *not* necessary.
